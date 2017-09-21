@@ -50,7 +50,7 @@ body.admin input, body.admin select, /* input elems on settings page */
 .star-icon.active
 { color: #D46F26; }
 
-.detailed-status__button .fa-star {
+.detailed-status__button .active .fa-star {
     color: #D46F26;
     filter: invert();
 }
