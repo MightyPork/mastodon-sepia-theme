@@ -1,24 +1,11 @@
-/* mozilla wrapper */
-@-moz-document domain("dev.glitch.social"), 
-domain("glitch.social"), 
-domain("cybre.space"), 
-domain("mastodon.social"), 
-domain("mastodon.xyz"), 
-domain("ephemeral.glitch.social"), 
-domain("witches.town"), 
-domain("mst3k.interlinked.me"), 
-domain("kitty.town"), 
-domain("computerfairi.es"),
-domain("mstdn.io"), 
-domain("mstdn.jp") {
-
+@-moz-document domain("dev.glitch.social"), domain("glitch.social"), domain("cybre.space"), domain("mastodon.social"), domain("mastodon.xyz"), domain("ephemeral.glitch.social"), domain("witches.town"), domain("mst3k.interlinked.me"), domain("kitty.town"), domain("computerfairi.es"), domain("mstdn.io"), domain("mstdn.jp") {
 /**
  * SEPIA light userstyle for Mastodon
  * by MightyPork@dev.glitch.social
  *
- * Version 6
+ * Version 7
  *
- * Tested on v 1.6 glitch-soc and vanilla
+ * Tested on v 1.6.1 ~2 glitch-soc and vanilla
  *
  * Update URL: https://userstyles.org/styles/148238/mastodon-sepia
  */
@@ -38,7 +25,8 @@ body.admin input, body.admin select, /* input elems on settings page */
 .star-icon.active .fa, /* activated star button */
 .active .fa-retweet, /* activated retweer button */
 .status-card-video iframe, /* youtube embed maybe shouldn't ne inverted lol */
-.autosuggest-account-icon
+.autosuggest-account-icon,
+.emoji-picker-dropdown__menu
 { filter: invert(); }
 
 /* rt and follow in notif */
@@ -100,7 +88,8 @@ article img.emojione,
 .emoji-row img, /* emoji picker items */
 .reply-indicator *, /* emoji picker reply view of the original status */
 .account__header__avatar .account__avatar, /* user acct on some masto versions */
-.media-modal .extended-video-player, .media-modal video
+.media-modal .extended-video-player, .media-modal video,
+.autosuggest-emoji .emojione
 { filter: none; }
 
 /* Hide inverted bg image in right panel, looks bad */
