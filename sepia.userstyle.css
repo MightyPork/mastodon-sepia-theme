@@ -3,7 +3,7 @@
  * SEPIA light userstyle for Mastodon
  * by MightyPork@dev.glitch.social
  *
- * Version 8
+ * Version 8.1
  *
  * Tested on glitch-soc 2018-01-16
  *
@@ -52,7 +52,7 @@ body.admin input, body.admin select, /* input elems on settings page */
 .media-spoiler, .video-error-cover
 { color: #a8b9ce; }
 
-.reply-indicator {
+.reply-indicator, .composer--reply {
     background: #d8bd8d;
 }
 
@@ -89,6 +89,8 @@ article img.emojione,
 .media-modal img, /* fix for image gallery */
 .emoji-row img, /* emoji picker items */
 .reply-indicator *, /* emoji picker reply view of the original status */
+.composer--reply *,
+.composer--reply .emojione,
 .account__header__avatar .account__avatar, /* user acct on some masto versions */
 .media-modal .extended-video-player, .media-modal video,
 .autosuggest-emoji .emojione
